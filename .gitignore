@@ -2,3 +2,5 @@ target/
 .idea/
 .dfx/
 .DS_Store
+canister_ids.json
+start.sh
