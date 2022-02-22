@@ -13,9 +13,9 @@ dependencies = [
 
 [[package]]
 name = "anyhow"
-version = "1.0.53"
+version = "1.0.55"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "94a45b455c14666b85fc40a019e8ab9eb75e3a124e05494f5397122bc9eb06e0"
+checksum = "159bb86af3a200e19a068f4224eae4c8bb2d0fa054c7e5d1cacd5cef95e684cd"
 
 [[package]]
 name = "arrayvec"
@@ -289,9 +289,9 @@ dependencies = [
 
 [[package]]
 name = "getrandom"
-version = "0.2.4"
+version = "0.2.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "418d37c8b1d42553c93648be529cb70f920d3baf8ef469b74b9638df426e0b4c"
+checksum = "d39cd93900197114fa1fcb7ae84ca742095eed9442088988ae74fa744e930e77"
 dependencies = [
  "cfg-if",
  "libc",
@@ -328,7 +328,7 @@ checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
 [[package]]
 name = "ic-cdk"
 version = "0.4.0"
-source = "git+https://github.com/3cL1p5e7/cdk-rs?tag=0.1.1#f30ca493477b842afd4042b7584a7ef8fccc9276"
+source = "git+https://github.com/3cL1p5e7/cdk-rs?tag=0.1.4#99c28f28a93461510c5f5384d9591791c12c16c3"
 dependencies = [
  "candid",
  "cfg-if",
@@ -338,7 +338,7 @@ dependencies = [
 [[package]]
 name = "ic-cdk-macros"
 version = "0.4.0"
-source = "git+https://github.com/3cL1p5e7/cdk-rs?tag=0.1.1#f30ca493477b842afd4042b7584a7ef8fccc9276"
+source = "git+https://github.com/3cL1p5e7/cdk-rs?tag=0.1.4#99c28f28a93461510c5f5384d9591791c12c16c3"
 dependencies = [
  "candid",
  "ic-cdk",
@@ -352,7 +352,7 @@ dependencies = [
 [[package]]
 name = "ic-certified-assets"
 version = "0.1.0"
-source = "git+https://github.com/3cL1p5e7/cdk-rs?tag=0.1.1#f30ca493477b842afd4042b7584a7ef8fccc9276"
+source = "git+https://github.com/3cL1p5e7/cdk-rs?tag=0.1.4#99c28f28a93461510c5f5384d9591791c12c16c3"
 dependencies = [
  "base64",
  "candid",
@@ -371,7 +371,7 @@ dependencies = [
 [[package]]
 name = "ic-certified-map"
 version = "0.3.0"
-source = "git+https://github.com/3cL1p5e7/cdk-rs?tag=0.1.1#f30ca493477b842afd4042b7584a7ef8fccc9276"
+source = "git+https://github.com/3cL1p5e7/cdk-rs?tag=0.1.4#99c28f28a93461510c5f5384d9591791c12c16c3"
 dependencies = [
  "serde",
  "serde_bytes",
@@ -467,9 +467,9 @@ checksum = "884e2677b40cc8c339eaefcb701c32ef1fd2493d71118dc0ca4b6a736c93bd67"
 
 [[package]]
 name = "libc"
-version = "0.2.118"
+version = "0.2.119"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "06e509672465a0504304aa87f9f176f2b2b716ed8fb105ebe5c02dc6dce96a94"
+checksum = "1bf2e165bb3457c8e098ea76f3e3bc9db55f87aa90d52d0e6be741470916aaa4"
 
 [[package]]
 name = "lock_api"
@@ -656,9 +656,9 @@ dependencies = [
 
 [[package]]
 name = "proc-macro-crate"
-version = "1.1.0"
+version = "1.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1ebace6889caf889b4d3f76becee12e90353f2b8c7d875534a71e5742f8f6f83"
+checksum = "9dada8c9981fcf32929c3c0f0cd796a9284aca335565227ed88c83babb1d43dc"
 dependencies = [
  "thiserror",
  "toml",
