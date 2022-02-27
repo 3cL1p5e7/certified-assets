@@ -59,6 +59,7 @@ type HttpResponse = record {
 type StreamingCallbackHttpResponse = record {
   body: blob;
   token: opt StreamingCallbackToken;
+  chunk_tree: opt text;
 };
 
 type StreamingCallbackToken = record {
@@ -88,16 +89,6 @@ service: {
     total_length: nat; // all chunks except last have size == content.size()
   }) query;
 
-  get_chunks_info: (record {
-    key: Key;
-    content_encoding: text;
-  }) -> (record {
-    total_length: nat64;
-    chunks: vec record {
-      chunk_id: ChunkId;
-      chunk_length: nat64;
-    };
-  }) query;
 
   // if get() returned chunks > 1, call this to retrieve them.
   // chunks may or may not be split up at the same boundaries as presented to create_chunk().
@@ -121,7 +112,7 @@ service: {
 
   create_batch : (record {}) -> (record { batch_id: BatchId });
 
-  create_chunk: (record { batch_id: BatchId; content: blob }) -> (record { chunk_id: ChunkId });
+  create_chunk: (record { batch_id: BatchId; content: blob; sha256: opt blob }) -> (record { chunk_id: ChunkId });
 
   // Perform all operations successfully, or reject
   commit_batch: (record { batch_id: BatchId; operations: vec BatchOperationKind }) -> ();
